@@ -154,3 +154,41 @@ nav {
   opacity: 1;
 }
 
+.collapsible {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.collapsible-btn {
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px;
+  text-align: left;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.collapsible-btn::after {
+  content: "\2630";
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.collapsible-btn.active {
+  background-color: #ccc;
+}
+
+.collapsible-content {
+  display: none;
+  padding: 0 18px;
+}
+
+.collapsible-content button {
+  display: block;
+  margin: 10px 0;
+}
